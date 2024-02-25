@@ -53,7 +53,7 @@ function Ecommerce(){
   }else{
 
   return (
-    <>
+    <div class="container">
     <div className="search-bar">
         <label htmlFor="sJ9r">Search  </label>
         <input type="text" name="" id="sJ9r" value={productname} onChange={(e) => setProductname(e.target.value)}/>
@@ -71,7 +71,7 @@ function Ecommerce(){
 
                     <div className ="item" key={id}>
                         <div className="imagepart">
-                            <img src={thumbnail} alt={title} width="380px" height="300px"/>
+                            <img src={thumbnail} alt={title} width="360px" height="300px"/>
                         </div>
                         <div className="details">
                             <h2><a href="javascript:;">{title}</a></h2>
@@ -90,7 +90,7 @@ function Ecommerce(){
         
         }
         </div>
-    </>
+    </div>
 
   );
     }
